@@ -1,0 +1,136 @@
+.subhead::first-letter {
+  initial-letter: 2;
+}
+
+#fotop{
+  object-fit:cover;
+  height: 100%;
+  width: 100%;
+}
+#imagenNS {
+  object-fit:contain;
+  height: 100%;
+  width: 100%;
+}
+
+.blackboard-container {
+  border: 10px solid #65c8cf;
+  background-color: #bf804c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px 5px #65c8cf;
+}
+
+.inner-container {
+  background-image: linear-gradient(45deg, #2d2d2d, black);
+  border: 10px solid #99653a;
+  padding: 20px;
+}
+
+#imgpost {
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.card-hover-zoom {
+  transition: transform 0.3s;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10%;
+}
+
+.card-hover-zoom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-color: #336265;
+  border-width: 3px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 300px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  max-height: 100px;
+  border-radius: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+
+.footer-container {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+.footer-column {
+  text-align: center;
+}
+
+.footer-column img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.container-fluid {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.frame-top-right {
+  position: absolute;
+  transform: rotate(-495deg);
+  opacity: 60%;
+  max-height: 115px;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.frame-bottom-left {
+  position: absolute;
+  transform: rotate(45deg);
+  opacity: 60%;
+  max-height: 95px;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.carousel-item {
+  transition: transform 1s ease-in-out;
+}
+
+.lead {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.lead1 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+}
+
+.row {
+  margin: 5%;
+}
+
+.card-text {
+  color: #333333;
+}
+
+.card-title {
+  color: #386b6f;
+  font-weight: bold;
+}

@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test de Intereses</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="assets/css/Styles.css">
+  <style>
+    body {
+      background-color: #65c8cf;
+    }
+
+    .circle {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #65c8cf;
+      text-align: center;
+      line-height: 55px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .question-container {
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .question-container input[type="radio"]:checked ~ .form-check-label {
+      background-color: #c1f2c1;
+    }
+  </style>
+</head>
+<body>
+<div id="navbarContainer"></div>
+
+  <div class="container">
+    <h1 style="text-align: center; font-size: 72px; color: white; padding: 60px; font-weight: bold;">Test de Intereses</h1>
+    <h1>Pregunta:</h1>
+    <form id="interests-form">
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">1</span> Diseñar programas de computación y explorar nuevas aplicaciones tecnológicas para uso del internet. 👨‍💻</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q1" value="si">
+          <label class="form-check-label"><h3>Sí, me gustaría🟢👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q1" value="no">
+          <label class="form-check-label"><h3>No, no es de mi interés🔴👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">2</span> Criar, cuidar y tratar animales domésticos y de campo. 🐶🐱🐮🐴</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">3</span> Investigar sobre áreas verdes, medio ambiente y cambios climáticos. 🌳🌍🌤️</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q3" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q3" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">4</span> Ilustrar, dibujar y animar digitalmente. 🎨✏️🖥️</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q4" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q4" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">5</span> Seleccionar, capacitar y motivar al personal de una organización/empresa. 👥💼💪</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q5" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q5" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">6</span> Realizar excavaciones para descubrir restos del pasado. ⛏️🦴🔍</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q6" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q6" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">7</span> Resolver problemas de cálculo para construir edificaciones. 🏗️🔢</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q7" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q7" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">8</span> Diseñar cursos para enseñar a la gente sobre temas de salud e higiene. 🩺📚</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q8" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q8" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">9</span> Tocar un instrumento, componer música y formar parte de un conjunto musical u orquesta. 🎶🎻🎹</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q9" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q9" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">10</span> Planificar cuales son las metas de una organización pública o privada a mediano y largo plazo. 📈🎯</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q10" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q10" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">11</span> Diseñar y planificar la producción masiva de artículos como muebles, autos, equipos de oficina, empaques y envases para alimentos y otros. 🛋️🚗🖥️📦</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q11" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q11" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">12</span> Diseñar logotipos y portadas de una revista. 🖌️📰</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q12" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q12" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">13</span> Organizar eventos y atender a sus asistentes. 🎉🤝🎤</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q13" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q13" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">14</span> Atender la salud de personas enfermas. 🏥🤒</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q14" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q14" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">15</span> Controlar ingresos y egresos de fondos y presentar el balance final de una institución. 💰📊</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q15" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q15" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">16</span> Hacer experimentos con plantas (frutas, árboles, flores). 🌱🔬🌻</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q16" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q16" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">17</span> Concebir planos para viviendas, edificios y ciudadelas. 🏘️📐</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q17" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q17" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">18</span> Investigar y probar nuevos productos farmacéuticos. 💊🔬</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q18" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q18" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">19</span> Hacer propuestas y formular estrategias para aprovechar las relaciones económicas entre dos países. 🌍💼🤝</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q19" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q19" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">20</span> Pintar, hacer esculturas, ilustrar libros de arte, etc. 🎨🖌️🗿</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q20" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q20" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">21</span> Elaborar campañas para introducir un nuevo producto al mercado. 📢💼</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q21" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q21" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">22</span> Examinar y tratar los problemas visuales. 👓👁️</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q22" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q22" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">23</span> Defender a clientes individuales o empresas en juicios de diferente naturaleza. ⚖️👨‍⚖️</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q23" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q23" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">24</span> Diseñar máquinas que puedan simular actividades humanas. 🤖🛠️</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q24" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q24" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">25</span> Investigar las causas y efectos de los trastornos emocionales. 🧠😔😃</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q25" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q25" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">26</span> Supervisar las ventas de un centro comercial. 🛒💰</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q26" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q26" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">27</span> Atender y realizar ejercicios a personas que tienen limitaciones físicas, problemas de lenguaje, etc. ♿🏋️‍♂️🗣️</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q27" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q27" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">28</span> Aconsejar a las personas sobre planes de ahorro e inversiones. 💰📈</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q28" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q28" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">29</span> Elaborar mapas, planos e imágenes para el estudio y análisis de datos geográficos. 🗺️🌍</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q29" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q29" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">30</span> Diseñar juegos interactivos electrónicos para computadora. 🎮💻</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q30" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q30" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">31</span> Realizar el control de calidad de los alimentos. 🍽️🔬</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q31" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q31" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">32</span> Tener un negocio propio de tipo comercial. 🏢💼</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q32" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q32" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">33</span> Analizar los fenómenos políticos y participar activamente en ellos. 🗳️👥</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q33" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q33" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">34</span> Escribir guiones de televisión, cuentos, novelas y artículos periodísticos. 📝📺📚</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q34" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q34" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">35</span> Organizar un plan de distribución y venta de un gran almacén. 📦💰</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q35" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q35" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">36</span> Estudiar las costumbres y la forma de vida de las comunidades rurales y urbanas. 🏘️🌾🏙️</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q36" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q36" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">37</span> Gestionar y evaluar convenios internacionales de cooperación para el desarrollo social. 🌍🤝💼</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q37" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q37" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">38</span> Hacer campañas publicitarias para productos y servicios. 📢💼</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q38" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q38" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">39</span> Trabajar investigando la reproducción de peces, camarones y otros animales marinos. 🐠🦐🔬</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q39" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q39" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+      <div class="question-container">
+        <label class="form-check-label"><h2><span class="circle">40</span> Fabricar productos alimenticios de consumo masivo. 🍔🍕🥦</h2></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q40" value="si">
+          <label class="form-check-label"><h3>🟢Sí, me gustaría👍🏻</h3></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q40" value="no">
+          <label class="form-check-label"><h3>🔴No, no es de mi interés👎🏻</h3></label>
+        </div>
+      </div>
+      
+
+      <button type="button" class="btn btn-primary" onclick="calculateResults()">Mostrar resultados</button>
+    </form>
+
+    <div class="question-container mt-4" id="results" style="display: none;">
+      <h2>Resultados:</h2>
+      <canvas id="chart"></canvas>
+      <h3>CIENCIA Y TECNOLOGÍA: <span id="science-score"></span>%</h3>
+      <p>Ingeniería en Sistemas Computacionales, Geología, Ingeniería Civil, Arquitectura, Electrónica, Telemática, Telecomunicaciones, Ingeniería Mecatrónica (Robótica), Imagen y Sonido, Minas, Petróleo y Metalurgia, Ingeniería Mecánica, Ingeniería Industrial, Física, Matemáticas Aplicadas, Ingeniería en Estadística, Ingeniería Automotriz, Biotecnología Ambiental, Ingeniería Geográfica, Carreras militares (marina, aviación, ejército), Ingeniería en Costas y Obras Portuarias, Estadística Informática, Programación y Desarrollo de Sistemas, Tecnología en Informática Educativa, Astronomía, Ingeniería en ciencias geográficas y desarrollo sustentable </p>
+      <h3>ARTE Y CREATIVIDAD: <span id="art-score"></span>%</h3>
+      <p>Diseño Gráfico, Diseño y Decoración de Interiores, Diseño de Jardines, Diseño de Modas, Diseño de Joyas, Artes Plásticas (pintura, escultura, danza, teatro, artesanía, cerámica), Dibujo Publicitario, Restauración y museología, modelaje, fotografía, Fotografía Digital, gestión gráfica y publicitaria, locución y publicidad, actuación, Camarografía, Arte Industrial, Producción Audiovisual y Multimedia, Comunicación y Producción en Radio y Televisión, Diseño del Paisaje, Cine y Video, Comunicación escénica para televisión.</p>
+      <h3>ECONÓMICA, ADMINISTRATIVA Y FINANCIERA: <span id="business-score"></span>%</h3>
+      <p>Administración de Empresas, Contabilidad, Auditoría, Ventas, Marketing Estratégico, Gestión y Negocios Internacionales, Gestión Empresarial, Gestión Financiera, Ingeniería Comercial, Comercio Exterior, Banca y Finanzas, Gestión de Recursos Humanos, Comunicaciones Integradas en Marketing, Administración de Empresas Ecoturísticas y de Hospitalidad, Ciencias Económicas y Financieras, Administración y Ciencias Políticas, Ciencias Empresariales, Comercio Electrónico, Emprendedores, Gestión de Organismos Públicos (Municipios, Ministerios, etc.), Gestión de Centros Educativos.</p>
+      <h3>CIENCIAS SOCIALES: <span id="social-score"></span>%</h3>
+      <P>Psicología en general, Trabajo Social, Idiomas, Educación Internacional, Historia y Geografía, Periodismo, Periodismo Digital, Derecho, Ciencias Políticas, Sociología, Antropología, Arqueología, Gestión Social y Desarrollo, Consejería Familiar, Comunicación y publicidad, Administración educativa, Educación Especial, Psicopedagogía, Estimulación Temprana, Traducción Simultánea, Lingüística, Educación de Párvulos, Bibliotecología, Museología, Relaciones Internacionales y Diplomacia, Comunicación Social con mención en Marketing y Gestión de Empresas, Redacción Creativa y Publicitaria, Relaciones Públicas y Comunicación Organizacional; Hotelería y Turismo; Teología, Institución Sacerdotal.</P>
+    </div>
+    <div class="question-container mt-4" id="results">
+        <h2>Sugerencias de Carreras Profesionales:</h2>
+        <ul id="career-suggestions"></ul>
+    </div>
+    
+  
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+ function sugerirCarrera(cienciaTecnologia, arteCreatividad, economiaAdministracion, cienciasSociales) {
+      // Lista de carreras profesionales
+      const carreras = [
+        "Ingeniería en Informática",
+        "Diseño Gráfico",
+        "Administración de Empresas",
+        "Psicología",
+        "Medicina",
+        "Arquitectura",
+        "Contabilidad",
+        "Comunicación Social",
+        "Marketing",
+        "Sociología",
+        "Ingeniería Civil",
+        "Artes Visuales",
+        "Economía",
+        "Periodismo",
+        "Derecho",
+        "Ingeniería Mecánica",
+        "Música",
+        "Finanzas",
+        "Antropología",
+        "Ingeniería Eléctrica"
+        // Puedes agregar más carreras a la lista
+      ];
+
+      // Calcula la diferencia porcentual para cada categoría
+      const diferenciaCienciaTecnologia = Math.abs(cienciaTecnologia - 50);
+      const diferenciaArteCreatividad = Math.abs(arteCreatividad - 50);
+      const diferenciaEconomiaAdministracion = Math.abs(economiaAdministracion - 50);
+      const diferenciaCienciasSociales = Math.abs(cienciasSociales - 50);
+
+      // Calcula el puntaje total de cada carrera basado en las diferencias porcentuales
+      const puntajes = carreras.map(carrera => {
+        let puntaje = 0;
+        if (carrera.includes("Ingeniería")) {
+          puntaje += diferenciaCienciaTecnologia;
+        }
+        if (carrera.includes("Arte") || carrera.includes("Diseño") || carrera.includes("Música")) {
+          puntaje += diferenciaArteCreatividad;
+        }
+        if (
+          carrera.includes("Economía") ||
+          carrera.includes("Administración") ||
+          carrera.includes("Finanzas")
+        ) {
+          puntaje += diferenciaEconomiaAdministracion;
+        }
+        if (carrera.includes("Ciencias") || carrera.includes("Sociología") || carrera.includes("Antropología")) {
+          puntaje += diferenciaCienciasSociales;
+        }
+        return { carrera, puntaje };
+      });
+
+      // Ordena las carreras por puntaje de menor a mayor
+      puntajes.sort((a, b) => a.puntaje - b.puntaje);
+
+      // Devuelve las 20 primeras carreras con menor puntaje
+      const sugerencias = puntajes.slice(0, 20).map(carrera => carrera.carrera);
+      return sugerencias;
+    }
+
+    function calculateResults() {
+      const form = document.getElementById('interests-form');
+      const answers = form.elements;
+
+      let scienceCount = 0;
+      let artCount = 0;
+      let businessCount = 0;
+      let socialCount = 0;
+
+      if (answers.q1.value === 'si') {
+        scienceCount++;
+        socialCount--;
+        businessCount--;
+      }
+      if (answers.q1.value === 'no') {
+        socialCount++;
+        artCount++;
+      }
+
+      if (answers.q2.value === 'si') {
+        socialCount++;
+        scienceCount--;
+      }
+      if (answers.q1.value === 'no') {
+        socialCount++;
+      }
+
+      if (answers.q3.value === 'si') {
+        scienceCount++;
+        businessCount--;
+      }
+
+      if (answers.q4.value === 'si') {
+        artCount++;
+      }
+
+      if (answers.q5.value === 'si') {
+        socialCount++;
+      }
+
+      if (answers.q6.value === 'si') {
+        socialCount++;
+      }
+      
+      if (answers.q7.value === 'si') {
+        scienceCount++;
+      }
+
+      if (answers.q8.value === 'si') {
+        socialCount++;
+      }
+
+      if (answers.q9.value === 'si') {
+        artCount++;
+      }
+
+      if (answers.q10.value === 'si') {
+        socialCount++;
+      }
+
+      if (answers.q11.value === 'si') {
+        businessCount++;
+      }
+
+      if (answers.q12.value === 'si') {
+        artCount++;
+      }
+
+      if (answers.q13.value === 'si') {
+        socialCount++;
+      }
+
+      if (answers.q14.value === 'si') {
+        scienceCount++;
+      }
+
+      if (answers.q15.value === 'si') {
+        businessCount++;
+      }
+
+      if (answers.q16.value === 'si') {
+        scienceCount++;
+      }
+
+      if (answers.q17.value === 'si') {
+        businessCount++;
+      }
+
+      if (answers.q18.value === 'si') {
+        scienceCount++;
+      }
+
+      if (answers.q19.value === 'si') {
+        businessCount++;
+      }
+
+      if (answers.q20.value === 'si') {
+        artCount++;
+      }
+
+      if (answers.q21.value === 'si') {
+        businessCount++;
+      }
+
+      if (answers.q22.value === 'si') {
+        scienceCount++;
+      }
+
+      if (answers.q23.value === 'si') {
+        socialCount++;
+      }
+
+      if (answers.q24.value === 'si') {
+        scienceCount++;
+      }
+
+      if (answers.q25.value === 'si') {
+        socialCount++;
+      }
+
+      if (answers.q26.value === 'si') {
+        businessCount++;
+      }
+
+      if (answers.q27.value === 'si') {
+        scienceCount++;
+      }
+
+      if (answers.q28.value === 'si') {
+        businessCount++;
+      }
+
+      if (answers.q29.value === 'si') {
+        socialCount++;
+      }
+
+      if (answers.q30.value === 'si') {
+        scienceCount++;
+      }
+
+      if (answers.q31.value === 'si') {
+        scienceCount++;
+      }
+
+      if (answers.q32.value === 'si') {
+        businessCount++;
+      }
+
+      if (answers.q33.value === 'si') {
+        socialCount++;
+      }
+
+      if (answers.q34.value === 'si') {
+        socialCount++;
+      }
+
+      if (answers.q35.value === 'si') {
+        businessCount++;
+      }
+
+      if (answers.q36.value === 'si') {
+        socialCount++;
+      }
+
+      if (answers.q37.value === 'si') {
+        socialCount++;
+      }
+
+      if (answers.q38.value === 'si') {
+        businessCount++;
+      }
+
+      if (answers.q39.value === 'si') {
+        scienceCount++;
+      }
+
+      if (answers.q40.value === 'si') {
+        socialCount++;
+      }
+      // Añadir el código para el resto de preguntas
+
+      const totalQuestions = 35; // Actualizar con el número total de preguntas
+      const sciencePercentage = (scienceCount / totalQuestions) * 100;
+      const artPercentage = (artCount / totalQuestions) * 100;
+      const businessPercentage = (businessCount / totalQuestions) * 100;
+      const socialPercentage = (socialCount / totalQuestions) * 100;
+
+      document.getElementById('science-score').textContent = sciencePercentage.toFixed(2);
+      document.getElementById('art-score').textContent = artPercentage.toFixed(2);
+      document.getElementById('business-score').textContent = businessPercentage.toFixed(2);
+      document.getElementById('social-score').textContent = socialPercentage.toFixed(2);
+
+      document.getElementById('results').style.display = 'block';
+      
+      // Llama a la función para obtener las sugerencias de carreras
+      const sugerenciasCarreras = sugerirCarrera(
+        sciencePercentage,
+        artPercentage,
+        businessPercentage,
+        socialPercentage
+      );
+
+      // Imprime las sugerencias de carreras
+      const careerSuggestionsList = document.getElementById('career-suggestions');
+      careerSuggestionsList.innerHTML = '';
+      sugerenciasCarreras.forEach((carrera, index) => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${index + 1}. ${carrera}`;
+        careerSuggestionsList.appendChild(listItem);
+      });
+
+      // Crear y configurar el gráfico de barras
+      const ctx = document.getElementById('chart').getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['CIENCIA Y TECNOLOGÍA', 'ARTE Y CREATIVIDAD', 'ECONÓMICA, ADMINISTRATIVA Y FINANCIERA', 'CIENCIAS SOCIALES'],
+          datasets: [{
+            label: 'Porcentaje',
+            data: [sciencePercentage, artPercentage, businessPercentage, socialPercentage],
+            backgroundColor: ['#ff6384', '#36a2eb', '#ffce56', '#4bc0c0']
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100
+            }
+          }
+        }
+      });
+    }
+  </script>
+<script src="assets/js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
